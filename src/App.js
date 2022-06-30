@@ -11,12 +11,19 @@ https://api.spacexdata.com/v3/launches/
 репрезентувати тільки окремі поля (зазначені в скрнішоті в папці)
 */
 
+
 import './App.css';
-import Users from "./components/users/Users";
-const App = () => {
-    return (<div>
-          <Users/>
-           </div>);
-};
+import Launches from "./components/launches/Launches";
+
+
+const App =() => {
+    return (
+        <div className="App">
+            <div className="Header" >
+                <Launches/>
+            </div>
+        </div>
+    );
+}
 
 export default App;
