@@ -5,7 +5,7 @@
 */
 import React, {useState} from 'react';
 import Users from "./components/users/Users";
-/*import Post from "./components/post/Post";*/
+import Post from "./components/post/Post";
 import {getUsersPosts} from "./services/user.api.service";
 
 
@@ -17,8 +17,7 @@ export default function App() {
     }
     return (<div>
         <h2> All posts of user:</h2>
-        {posts.map(value => <div>{value.body}</div>)
-        }
+        {posts.map(value => <Post key={value.id} item={value}/>)}
         <hr/>
         <Users getPostByUser={getPostByUser}/>
     </div>);
