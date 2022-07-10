@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Todo = ({todo}) => {
+const Post = () => {
     return (
         <div>
-onetodo
+            onepost
         </div>
     );
 };
 
-export default Todo;
+export default Post;
