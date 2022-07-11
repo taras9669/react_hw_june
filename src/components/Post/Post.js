@@ -3,7 +3,7 @@ import React from 'react';
 const Post = ({post}) => {
     return (
         <div>
-            <h3>Post:</h3>
+            <h2>Post:</h2>
             {post.id} --- {post.title}
         </div>
     );
