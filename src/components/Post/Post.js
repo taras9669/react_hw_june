@@ -2,7 +2,7 @@ import React from 'react';
 
 const Post = ({post}) => {
     return (
-        <div>dfdf
+        <div>
             <h2>Post:</h2>
             {post.id} --- {post.title}
         </div>
