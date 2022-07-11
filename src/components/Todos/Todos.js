@@ -1,8 +1,8 @@
 import React from 'react';
 import {useEffect, useState} from "react";
-import Todo from "../../components/Todo/Todo";
+import Todo from "../Todo/Todo";
 
-const AllTodosPage = () => {
+const Todos = () => {
     const [todos, setTodos] = useState([]);
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/todos')
@@ -19,4 +19,4 @@ const AllTodosPage = () => {
 
     );
 };
-export default AllTodosPage;
+export default Todos

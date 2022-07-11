@@ -1,12 +1,14 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {NavLink, Outlet} from "react-router-dom";
+import css from "./Layout.module.css";
 
 const Layout = () => {
     return (
-        <div>
-            <NavLink to ="/todos">Users</NavLink>
-            <NavLink to ="/albums">Posts</NavLink>
-            <NavLink to ="/comments">Posts</NavLink>
+        <div className={css.header}>
+            <NavLink to ="/todos">Todos</NavLink>
+            <NavLink to ="/albums">Albums</NavLink>
+            <NavLink to ="/comments">Comments</NavLink>
+            <Outlet/>
         </div>
     );
 };
