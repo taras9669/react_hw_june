@@ -13,7 +13,7 @@ const AllTodosPage = () => {
 
     return (
         <div>
-            <h1>TODOS</h1>
+            <h1>TODOS:</h1>
             {todos.map(todo => <Todo key={todo.id} todo={todo}/>)}
         </div>
 

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Album = () => {
+const Album = ({album}) => {
     return (
         <div>
-            
+            {album.id} --- {album.title}
         </div>
     );
 };
