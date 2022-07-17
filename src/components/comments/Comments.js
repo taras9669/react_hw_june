@@ -7,14 +7,18 @@ import Comment from "../comment/Comment";
 
     constructor(props) {
         super(props);
-        this.commentsApiService = new CommentsApiService();
-        this.commentsApiService.getComments().then(value => this.setState({comments:value}));
     }
+        componentDidMount() {
+            this.commentsApiService = new CommentsApiService();
+            this.commentsApiService.getComments().then(value => this.setState({comments: value}));
+        }
+
 
 
     render() {
         return (
             <div>
+                <h3>Comments:</h3>
                 {this.state.comments.map(value => <Comment key={value.id} item={value}></Comment>)}
             </div>
         );

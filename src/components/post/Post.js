@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
-class Comment extends Component {
+class Post extends Component {
 
     constructor(props) {
         super(props);
-        this.comment = this.props.item;
+        this.post = this.props.item;
     }
 
 
@@ -12,10 +12,10 @@ class Comment extends Component {
     render() {
         return (
             <div>
-                ID:{this.comment.id} - Name:{this.comment.name}
+                ID:{this.post.id} - Name:{this.post.title}
             </div>
         );
     }
 }
 
-export default Comment;
+export default Post;

@@ -1,10 +1,11 @@
-import './components/App.css';
+import css from "./App.module.css"
 import Comments from "./components/comments/Comments";
+import Posts from "./components/posts/Posts";
 const App = () => {
     return (
-        <div>
+        <div className={css.header}>
           <Comments/>
-
+          <Posts/>
         </div>
     );
 };
