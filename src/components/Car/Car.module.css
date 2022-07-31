@@ -1,0 +1,8 @@
+.carDiv {
+    border: solid 3px #0d0d4e;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    width: 400px;
+}
